@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
 class Poke(models.Model):
@@ -8,4 +9,7 @@ class Poke(models.Model):
     age = models.IntegerField()
 
     def __str__(self):
-        return self.name
+        return f'{self.name} ({self.id})'
+    
+    def get_absolute_url(self):
+        return reverse('detail', kwargs={'poke_id': self.id})

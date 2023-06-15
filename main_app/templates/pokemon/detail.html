@@ -14,6 +14,10 @@
             <p>Age: Baby</p>
         {% endif %}
     </div>
+    <div class="card-action">
+        <a href="{% url 'pokemon_update' poke.id %}">Edit</a>
+        <a href="{% url 'pokemon_delete' poke.id %}">Delete</a>
+    </div>
 </div>
 
 
