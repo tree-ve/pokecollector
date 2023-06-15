@@ -5,16 +5,18 @@
 
 {% for poke in pokemon %}
     <div class="card">
-        <div class="card-content">
-            <span class="card-title">{{ poke.name }}</span>
-            <p>Breed: {{ poke.breed }}</p>
-            <p>Description: {{ poke.description }}</p>
-            {% if poke.age > 0 %}
-                <p>Age: {{ poke.age }}</p>
-            {% else %}
-                <p>Age: Kitten</p>
-            {% endif %}
-        </div>
+        <a href="{% url 'detail' poke.id %}">
+            <div class="card-content">
+                <span class="card-title">{{ poke.name }}</span>
+                <p>Breed: {{ poke.breed }}</p>
+                <p>Description: {{ poke.description }}</p>
+                {% if poke.age > 0 %}
+                    <p>Age: {{ poke.age }}</p>
+                {% else %}
+                    <p>Age: Baby</p>
+                {% endif %}
+            </div>
+        </a>
     </div>
 {% endfor %}
 
