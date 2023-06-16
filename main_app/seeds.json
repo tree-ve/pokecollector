@@ -1,0 +1,42 @@
+[
+{
+  "model": "main_app.poke",
+  "pk": 1,
+  "fields": {
+    "name": "Bingle",
+    "breed": "Mudkip",
+    "description": "Shaped like a friend",
+    "age": 2
+  }
+},
+{
+  "model": "main_app.poke",
+  "pk": 2,
+  "fields": {
+    "name": "Gumbus",
+    "breed": "Fuecoco",
+    "description": "Will eat everything",
+    "age": 1
+  }
+},
+{
+  "model": "main_app.poke",
+  "pk": 3,
+  "fields": {
+    "name": "Gimble",
+    "breed": "Mimikyu",
+    "description": "Lil eldritch horror",
+    "age": 3
+  }
+},
+{
+  "model": "main_app.poke",
+  "pk": 4,
+  "fields": {
+    "name": "Flurgle",
+    "breed": "Snorlax",
+    "description": "He big",
+    "age": 7
+  }
+}
+]
